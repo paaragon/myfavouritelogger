@@ -2,7 +2,8 @@
   "name": "myfavouritelogger",
   "version": "1.0.0",
   "description": "typescript logger using winston with cool features and easy to use",
-  "main": "index.js",
+  "main": "lib/myfavouritelogger.js",
+  "types": "lib/myfavouritelogger.d.ts",
   "scripts": {
     "test": "jest --config jestconfig.json",
     "build": "tsc  --project tsconfig.json",
@@ -23,7 +24,9 @@
   "keywords": [
     "typescript",
     "logger",
-    "winston"
+    "winston",
+    "custom",
+    "file logger"
   ],
   "author": "Pablo Aragón Moreno <pablo.aragon22@gmail.com>",
   "license": "ISC",
