@@ -1,12 +1,19 @@
 language: node_js
-sudo: false
+os: linux
 node_js:
-  - 10
-  - 9
-  - 8
-  - 7
-  - 6
-install:
-  - npm install
-script:
-  - npm test
+  - "10"
+jobs:
+  include:
+    - stage: testing
+      if: branch in (main)
+      script: # if this is not set, it will run npm run test
+        - npm run test
+    - stage: npm release
+      # only release on master branch
+      if: branch = main
+      deploy:
+        edge: true
+        provider: npm
+        email: "$NPM_EMAIL"
+        api_key: "$NPM_TOKEN"
+        cleanup: true
