@@ -6,7 +6,7 @@ This is my favourite logger and it will be yours.
 
 1. You want to write cool console logs (colors, dates...).
 2. You want to write file logs with daily rotation and size control.
-3. You know how to use Winston logger but you don't like how it look out of the box.
+3. You know how to use Winston logger but you don't like how it looks out of the box.
 4. You like colors.
 5. You like customization.
 6. You like log levels.
@@ -15,7 +15,7 @@ This is my favourite logger and it will be yours.
 
 ## How to use it?
 
-```
+```javascript
 import myfavouritelogger from 'myfavouritelogger';
 
 const logger = myfavouritelogger();
@@ -27,15 +27,11 @@ logger.warn('Hello world!');
 
 ## How to customize it?
 
-```
+```javascript
 import myfavouritelogger from 'myfavouritelogger';
 
 const logger = myfavouritelogger({
     printFormat: (str: string, info: TransformableInfo) => {
-        // you can change the string as you need
-        // str: the string you want to manipulate and print
-        // info: winston logger info object
-
         if (info.level) {
             str += mapLevelColor(info.level, `[${info.level}] `);
         }
