@@ -1,5 +1,7 @@
 import myfavouritelogger from './myfavouritelogger';
 
-const logger = myfavouritelogger(undefined, new Date(2021, 10, 7, 14, 0, 0));
+const logger = myfavouritelogger();
 
-logger.info('hola caracola');
+logger.info('Hello world!');
+logger.error('Hello world!');
+logger.warn('Hello world!');
