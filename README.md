@@ -1,5 +1,7 @@
 # myfavouritelogger
 
+[![Build Status](https://app.travis-ci.com/paaragon/myfavouritelogger.svg?branch=main)](https://app.travis-ci.com/paaragon/myfavouritelogger)
+
 This is my favourite logger and it will be yours.
 
 ## Why use it?
