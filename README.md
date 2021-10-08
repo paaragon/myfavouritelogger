@@ -1,12 +1,12 @@
 # myfavouritelogger
 
-[![Build Status](https://app.travis-ci.com/paaragon/myfavouritelogger.svg?branch=main)](https://app.travis-ci.com/paaragon/myfavouritelogger)
+[![Build Status](https://app.travis-ci.com/paaragon/myfavouritelogger.svg?branch=main)](https://app.travis-ci.com/paaragon/myfavouritelogger target="_blank)
 
 This is my favourite logger and it will be yours.
 
 ## Try it!
 
-[Try on Runkit](https://runkit.com/paaragon/myfavouritelogger)
+[Try on Runkit](https://runkit.com/paaragon/myfavouritelogger target="_blank)
 
 ## Why use it?
 
