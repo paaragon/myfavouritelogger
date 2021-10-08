@@ -27,9 +27,10 @@ import myfavouritelogger from 'myfavouritelogger';
 
 const logger = myfavouritelogger();
 
-logger.info('Hello world!');
 logger.error('Hello world!');
 logger.warn('Hello world!');
+logger.info('Hello world!');
+logger.debug('Hello world!'); // not shown, default level is info
 ```
 
 ```javascript
@@ -38,9 +39,10 @@ const myfavouritelogger = require('myfavouritelogger').default;
 
 const logger = myfavouritelogger();
 
-logger.info('Hello world!');
 logger.error('Hello world!');
 logger.warn('Hello world!');
+logger.info('Hello world!');
+logger.debug('Hello world!'); // not shown, default level is info
 ```
 
 ## How to customize it?
@@ -75,9 +77,10 @@ const logger = myfavouritelogger({
     dateFormat: 'YYYY-MM-DD HH:mm:ssZ';
 });
 
-logger.info('Hello world!');
 logger.error('Hello world!');
 logger.warn('Hello world!');
+logger.info('Hello world!');
+logger.debug('Hello world!');
 ```
 
 ### Options
