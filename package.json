@@ -2,8 +2,8 @@
   "name": "myfavouritelogger",
   "version": "1.1.1",
   "description": "typescript logger using winston with cool features and easy to use",
-  "main": "lib/index.js",
-  "types": "lib/index.d.ts",
+  "main": "lib/myfavouritelogger.js",
+  "types": "lib/myfavouritelogger.d.ts",
   "scripts": {
     "test": "jest --config jestconfig.json",
     "build": "tsc  --project tsconfig.json",

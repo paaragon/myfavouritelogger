@@ -1,5 +1,5 @@
 import moment from 'moment';
-import myfavouritelogger from '../src/index';
+import myfavouritelogger from '../src/myfavouritelogger';
 
 describe('Console logging default behaviour', () => {
     global.console = {
