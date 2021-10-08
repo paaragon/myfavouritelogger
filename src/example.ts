@@ -1,4 +1,4 @@
-import myfavouritelogger from './myfavouritelogger';
+import myfavouritelogger from './index';
 
 const logger = myfavouritelogger();
 
