@@ -4,6 +4,10 @@
 
 This is my favourite logger and it will be yours.
 
+## Try it!
+
+[Try on Runkit](https://runkit.com/paaragon/myfavouritelogger)
+
 ## Why use it?
 
 1. You want to write cool console logs (colors, dates...).
