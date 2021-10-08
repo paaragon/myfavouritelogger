@@ -1,6 +1,6 @@
 {
   "name": "myfavouritelogger",
-  "version": "1.0.3",
+  "version": "1.1.0",
   "description": "typescript logger using winston with cool features and easy to use",
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
