@@ -6,6 +6,7 @@ jobs:
   include:
     - stage: testing
       if: branch in (main)
+      install: npm install
       script: # if this is not set, it will run npm run test
         - npm install codecov -g
         - npm run test
