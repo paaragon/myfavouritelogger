@@ -7,7 +7,10 @@ jobs:
     - stage: testing
       if: branch in (main)
       script: # if this is not set, it will run npm run test
+        - npm install codecov -g
         - npm run test
+      after_success:
+        - codecov
     - stage: npm release
       # only release on master branch
       if: branch = main
