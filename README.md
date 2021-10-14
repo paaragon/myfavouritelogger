@@ -2,6 +2,7 @@
 
 [![Build Status](https://app.travis-ci.com/paaragon/myfavouritelogger.svg?branch=main)](https://app.travis-ci.com/paaragon/myfavouritelogger)
 [![codecov](https://codecov.io/gh/paaragon/myfavouritelogger/branch/main/graph/badge.svg?token=YJRWD9KN39)](https://codecov.io/gh/paaragon/myfavouritelogger)
+[![npm version](https://badge.fury.io/js/myfavouritelogger.svg)](https://badge.fury.io/js/myfavouritelogger)
 
 This is my favourite logger and it will be yours.
 

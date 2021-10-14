@@ -9,13 +9,13 @@ jobs:
       install: npm install
       script: # if this is not set, it will run npm run test
         - npm install codecov -g
+        - npm install typescript -g
         - npm run test
       after_success:
         - codecov
     - stage: npm release
       # only release on master branch
       if: branch = main
-      install: npm install
       deploy:
         edge: true
         provider: npm
