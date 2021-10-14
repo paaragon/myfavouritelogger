@@ -1,6 +1,6 @@
 {
   "name": "myfavouritelogger",
-  "version": "1.2.15",
+  "version": "1.2.16",
   "description": "typescript logger using winston with cool features and easy to use",
   "main": "lib/myfavouritelogger.js",
   "types": "lib/myfavouritelogger.d.ts",
