@@ -15,6 +15,7 @@ jobs:
     - stage: npm release
       # only release on master branch
       if: branch = main
+      install: npm install
       deploy:
         edge: true
         provider: npm
