@@ -16,10 +16,6 @@ jobs:
     - stage: npm release
       # only release on master branch
       if: branch = main
-      install: npm install
-      script: # if this is not set, it will run npm run test
-        - npm install typescript -g
-        - npm install
       deploy:
         edge: true
         provider: npm
