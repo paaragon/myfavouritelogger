@@ -19,6 +19,7 @@ jobs:
       install: npm install
       script: # if this is not set, it will run npm run test
         - npm install typescript -g
+        - npm install
       deploy:
         edge: true
         provider: npm
