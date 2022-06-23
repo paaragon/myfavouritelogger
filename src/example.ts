@@ -2,7 +2,7 @@ import myfavouritelogger from './myfavouritelogger';
 
 const logger = myfavouritelogger();
 
-logger.info('Hola');
-logger.error('Hola');
-logger.warn('Hola');
-logger.debug('Hola');
+setTimeout(() => logger.info('Hola'), 0);
+setTimeout(() => logger.error('Hola'), 1000);
+setTimeout(() => logger.warn('Hola'), 2000);
+setTimeout(() => logger.debug('Hola'), 3000);
