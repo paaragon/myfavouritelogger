@@ -1,4 +1,4 @@
-import { TransformableInfo } from 'logform';
+import {TransformableInfo} from 'logform';
 
 export type LoggerPrintFunction = (str: string, info: TransformableInfo) => string;
 
