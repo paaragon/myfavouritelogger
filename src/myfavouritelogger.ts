@@ -30,8 +30,10 @@ export default function (loggerConfig?: LoggerConfig, testDate?: Date): winston.
     }
     const transports: (DailyRotateFile | ConsoleTransportInstance)[] = [];
 
-    const timestamp = testDate ? testDate : new Date();
-    const tsFormat = () => moment(timestamp).utc().format(dateFormat).trim();
+    const tsFormat = () => {
+        const timestamp = testDate ? testDate : new Date();
+        return moment(timestamp).utc().format(dateFormat).trim();
+    }
     if (filePath) {
         transports.push(getDailyFileTransport(level, fileConfig, printFormat, tsFormat));
     }
