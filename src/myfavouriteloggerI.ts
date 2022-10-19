@@ -21,5 +21,5 @@ export interface LoggerConfig {
     level?: LoggerLevel;
     colors?: boolean;
     dateFormat?: string;
-    customTransports: Transport[]
+    customTransports?: Transport[]
 }
