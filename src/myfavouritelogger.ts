@@ -1,5 +1,6 @@
 import * as colors from 'colors';
 import {TransformableInfo} from 'logform';
+import * as Transport from 'winston-transport';
 import moment from 'moment';
 import winston from 'winston';
 import 'winston-daily-rotate-file';
@@ -28,7 +29,7 @@ export default function(loggerConfig?: LoggerConfig, testDate?: Date): winston.L
   if (printColors === false) {
     colors.disable();
   }
-  const transports: (DailyRotateFile | ConsoleTransportInstance)[] = [];
+  let transports: (DailyRotateFile | ConsoleTransportInstance | Transport)[] = [];
 
   const tsFormat = () => {
     const timestamp = testDate ? testDate : new Date();
@@ -40,6 +41,10 @@ export default function(loggerConfig?: LoggerConfig, testDate?: Date): winston.L
 
   if (showConsole !== false) {
     transports.push(getConsoleTransport(level, printFormat, tsFormat));
+  }
+
+  if (loggerConfig?.customTransports && loggerConfig.customTransports.length > 0) {
+    transports = [...transports, ...loggerConfig.customTransports];
   }
 
   const logger = winston.createLogger({transports});

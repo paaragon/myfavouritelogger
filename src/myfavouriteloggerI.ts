@@ -1,4 +1,5 @@
 import {TransformableInfo} from 'logform';
+import * as Transport from 'winston-transport';
 
 export type LoggerPrintFunction = (str: string, info: TransformableInfo) => string;
 
@@ -20,4 +21,5 @@ export interface LoggerConfig {
     level?: LoggerLevel;
     colors?: boolean;
     dateFormat?: string;
+    customTransports: Transport[]
 }
